@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1> Explore Travel Destinations</h1>
+    <p class="subtitle">Click to reveal highlights and stunning views</p>
+  </header>
+
+  <main class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-toggle">🇫🇷 Paris</button>
+      <div class="accordion-content">
+        <p>Paris is known for its art, fashion, and the Eiffel Tower.</p>
+        <div class="thumbs">
+          <img src="_images/paris-thumb.jpg" data-full="_images/paris-thumb.jpg" alt="Eiffel Tower at sunset" class="lightbox-trigger" />
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-toggle">🇯🇵 Tokyo</button>
+      <div class="accordion-content">
+        <p>Tokyo blends tradition with futuristic innovation.</p>
+        <div class="thumbs">
+          <img src="_images/tokyo-thumb.jpg" data-full="_images/tokyo-thumb.jpg" alt="Tokyo skyline at night" class="lightbox-trigger" />
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <footer>
+    <p>Created by Alyssa for ICE Task 4 | WEDE5020</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
